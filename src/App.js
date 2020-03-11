@@ -1,26 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Table } from 'antd'
+import { hot } from 'react-hot-loader/root'
 
-function App() {
+function App () {
+  console.log('npm start 之后注释我然后保存，触发 hot reload')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Table />
+  )
 }
 
-export default App;
+export default hot(App);
